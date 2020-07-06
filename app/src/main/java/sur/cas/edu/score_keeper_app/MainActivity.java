@@ -91,4 +91,24 @@ public class MainActivity extends AppCompatActivity {
         liverpoolFoul = liverpoolFoul + 1;
         displayFoulForLiverpool(liverpoolFoul);
     }
+
+
+    /**
+     * Resetting all scores back to zero for both teams
+     */
+    public void resetScore(View view) {
+        manCGoal = 0;
+        manCFoul = 0;
+        liverpoolGoal = 0;
+        liverpoolFoul = 0;
+
+        //resetting manchester city scores
+        displayGoalForManC(manCGoal);
+        displayFoulForManC(manCFoul);
+
+        //resetting liverpool scores
+        displayGoalForLiverpool(liverpoolGoal);
+        displayFoulForLiverpool(liverpoolFoul);
+
+    }
 }
